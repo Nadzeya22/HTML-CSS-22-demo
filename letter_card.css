@@ -1,10 +1,10 @@
 body {
-    width: 100vw;
+    width: 90vw;
     margin:10px;
     background-color: rgb(228, 235, 235);
 }
 /** THe image takes 30% of the card, the content - the rest**/
-/** ?? How to stop the card from growing vertically when resized?**/
+/** ?? How to stop the card from growing vertically when resized? Loooks like grids will do so? Change display-grid?**/
 .card_wrapper {
     display: grid;
     grid-template-columns: 30% auto;
@@ -12,8 +12,7 @@ body {
     flex-direction: row;
     background-color: rgb(207, 223, 237);
     width: 80vw;
-    height: 320px;
-    }
+}
 
 .card_image_container {
     grid-column: 1 / 2;
@@ -26,15 +25,13 @@ body {
     /**as child**/
     grid-column: 2 / 2;
     padding: 16px;
-    background-color: rgb(68, 68, 19);
+    /**background-color: rgb(68, 68, 19);**/
 
     /**as parent**/
     display: flex;  
     flex-direction: column;
     align-items: center;
-
-    
-       
+   
 }
 
 
@@ -42,17 +39,20 @@ body {
 .bookmark_wrapper {
 width: 100%;
 text-align: end;
-background-color: brown;
+/**background-color: brown;**/
 }
 
-   .material-icons { font-size: 3rem;
+   .material-icons { font-size: 1rem;
     margin:4px; }
 
 
 .write_details_wrapper {
 box-sizing: border-box;    
-background-color: yellowgreen;
+/**background-color: yellowgreen;**/
+display: flex;
+align-items: center;
 width:100%;
+
 height: fit-content;
 padding: 0.5em 0.25em;
 vertical-align: middle;
@@ -64,23 +64,66 @@ vertical-align: middle;
         text-transform: uppercase;
         font-weight: bold;
         display: inline-block;
-        background-color: blanchedalmond;
+        margin-right: 0.5em;
+     /**   background-color: blanchedalmond;**/
     }
+    .to::before{
+        content:"to";
+        text-transform: lowercase;
+        font-weight: lighter;
+        }
+
 .date {
     display: inline-block;
-    background-color: blanchedalmond;
+    margin: 0 0.5em;
+   /** background-color: blanchedalmond;**/
 }  
 
-.by {/**can I add the preposition "by" to this class without writing it in html?**/   
+.by   
     text-transform: capitalize;
     display: inline-block;
-    background-color: blanchedalmond;   
+   /** background-color: blanchedalmond;  **/ 
+}
+.by::before{
+content:"by";
+text-transform: lowercase;
 }
 
+.category_chip {
+    display: inline-block;
+    background-color: blanchedalmond;
+    width: fit-content;
+    border-radius: 2em;
+    padding: 4px 1em;
+    margin-left: 2em;
+   
+}
 .letter_teaser {
     width:100%;
-    white-space: nowrap;
-    overflow: hidden;
+       overflow: hidden;
     text-overflow: ellipsis;
+    height: 8em;
+    }
 
+.read_details_wrapper {
+    box-sizing: border-box; 
+    width: 100%;
+    padding: 0.5em 0.25em;
+    margin-right: 5px;
+    /**background-color: blueviolet;**/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+    .read_time {  
+        display: inline-block;
+        text-transform: lowercase;
+      }
+    .reactions {
+        display: inline-block;
+        /**background-color: blueviolet;**/
+        margin-left: 1.5em;
+    }
+    
+
+
