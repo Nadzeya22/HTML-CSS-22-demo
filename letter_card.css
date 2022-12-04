@@ -3,29 +3,47 @@ body {
     margin:10px;
     background-color: rgb(228, 235, 235);
 }
+/**Start of css of the letter card**/
+
 /** THe image takes 30% of the card, the content - the rest**/
 /** ?? How to stop the card from growing vertically when resized? Loooks like grids will do so? Change display-grid?**/
+/** The letter teaser container: cut the line of the text; the text doesn't truncate**/
+
 .card_wrapper {
+    /**self**/
+    display: flex;
+    width: 100%;
+    background-color: rgb(0, 255, 170);
+    height: 240px;
+
+}
+/**.card_wrapper {
     display: grid;
     grid-template-columns: 30% auto;
     gap:1em;
     flex-direction: row;
     background-color: rgb(207, 223, 237);
-    width: 80vw;
-}
+    width: 90%;
+}**/
 
 .card_image_container {
-    grid-column: 1 / 2;
+   /** grid-column: 1 / 2;**/
+
     background-color: red;
+    width: 240px;
+    height: 240px;
+    flex-shrink: 0;
+}    
+.card_image {
     width: 100%;
     height: 100%;
-}    
-
+    object-fit: cover;
+}
 .card_content_wrapper {
     /**as child**/
-    grid-column: 2 / 2;
+    /**grid-column: 2 / 2;**/
     padding: 16px;
-    /**background-color: rgb(68, 68, 19);**/
+    background-color: rgb(68, 68, 19);
 
     /**as parent**/
     display: flex;  
@@ -38,6 +56,7 @@ body {
 
 .bookmark_wrapper {
 width: 100%;
+height: 10px;
 text-align: end;
 /**background-color: brown;**/
 }
@@ -50,22 +69,29 @@ text-align: end;
 box-sizing: border-box;    
 /**background-color: yellowgreen;**/
 display: flex;
+flex-wrap: wrap-reverse;
 align-items: center;
 width:100%;
 
 height: fit-content;
 padding: 0.5em 0.25em;
 vertical-align: middle;
-
+gap:1em;
 }
 
-/**can I add the preposition "to" to this class without writing it in html?**/   
+/**so that these details don't wrap whehn resized**/
+.to_date_by {
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+gap: 1em;
+}
 .to {
         text-transform: uppercase;
         font-weight: bold;
         display: inline-block;
-        margin-right: 0.5em;
-     /**   background-color: blanchedalmond;**/
+        
+     /**  margin-right: 0.5em; background-color: blanchedalmond;**/
     }
     .to::before{
         content:"to";
@@ -75,14 +101,15 @@ vertical-align: middle;
 
 .date {
     display: inline-block;
-    margin: 0 0.5em;
-   /** background-color: blanchedalmond;**/
+    
+   /**margin: 0 0.5em; background-color: blanchedalmond;**/
 }  
 
-.by   
+.by {  
     text-transform: capitalize;
     display: inline-block;
-   /** background-color: blanchedalmond;  **/ 
+    
+   /** margin: 0 0.5em;background-color: blanchedalmond;  **/ 
 }
 .by::before{
 content:"by";
@@ -94,15 +121,19 @@ text-transform: lowercase;
     background-color: blanchedalmond;
     width: fit-content;
     border-radius: 2em;
-    padding: 4px 1em;
-    margin-left: 2em;
-   
+    padding: 4px 1em; 
 }
+
+.letter_title {
+    line-height: 4px;
+margin: 12px 0;}
+
+
 .letter_teaser {
     width:100%;
-       overflow: hidden;
+    overflow: hidden;
     text-overflow: ellipsis;
-    height: 8em;
+    height: 4rem;
     }
 
 .read_details_wrapper {
@@ -124,6 +155,23 @@ text-transform: lowercase;
         /**background-color: blueviolet;**/
         margin-left: 1.5em;
     }
+/**End of css of the letter card**/
+
+/**start of the css of the letter container**/
+article {
+    /**self**/
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
+
+    /**as parent**/
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex-wrap: nowrap;
+    align-items: center;
     
+
+}
 
 
