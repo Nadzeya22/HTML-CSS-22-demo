@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Letter card BS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap"
+    rel="stylesheet">
+    <!--<link rel="stylesheet" href="letter_card.css">-->
+
+  <style>
+    body {
+      width: 100vw;
+          background-color: antiquewhite;
+    }
+
+    .card img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      background-color: black;
+      filter: brightness(.4);
+    }
+
+    .card {
+      height: 400px;
+    }
+
+    .footer {
+   line-height: 24px;
+      color: orange;
+      background-color: #ffffff00;
+     border-bottom: 0 ;
+    }
+    .card p, h5 { /**this truncates the text after 4 lines, change in the line clamp property**/
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical; 
+  width: 100%;
+  overflow: hidden;
+     }
+
+.bookmark_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.5em;
+    /**background-color: brown;**/
+}
+.primary_color {
+  color:yellow;
+  
+}
+.category_chip {
+    display: inline-block;
+    background-color: rgb(236, 238, 211);
+    width: fit-content;
+    height: 2.4em;
+    line-height: 2em;
+    text-align: center;
+    border-radius: 0 2px 2px 0;
+    padding: 2px 1em;
+    margin-top: 4px;
+    position: absolute;
+    top:25%;
+    left:-1px;
+  
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+    font-size: 0.8rem;
+       
+}
+
+.to {
+  display: inline-block;
+  margin-right: 0.8em;
+    text-transform: uppercase;
+    font-weight: 400;
+    display: inline-block;
+    font-size: small;
+        
+
+    /**  margin-right: 0.5em; background-color: blanchedalmond;**/
+}
+
+.to::before {
+    content: "to";
+    text-transform: lowercase;
+    font-weight: lighter;
+}
+.date {
+    display: inline-block;
+    /**margin: 0 0.5em; background-color: blanchedalmond;**/
+}
+.by {
+    text-transform: capitalize;
+    display: inline-block;
+
+    /** margin: 0 0.5em;background-color: blanchedalmond;  **/
+}
+
+.by::before {
+    content: "by";
+    text-transform: lowercase;
+}
+
+.card-title {
+  position:absolute;
+  top:12%;
+  color:white;
+  width: 90%;
+  font-weight: 600;
+}
+
+img+i {
+  color:white;
+  position: absolute;
+  top: 2%;
+  right: 3%;
+  font-size: 24px;
+   
+}
+
+.card i {
+  font-size:16px;
+}
+  </style>
+
+</head>
+
+<body>
+
+
+  <div class="container"> 
+    <div class="row row-cols-1 row-cols-md-3 g-3">
+      <div class="col ">
+        <div class="card">
+                
+            <img src="test.jpg" class="card-img-top">
+                     
+            <i class="material-icons">bookmark</i>
+
+          
+                  
+          <div class="card-body">
+            <div class="to"> public  </div>
+            <div class="date"> 21 Oct 2022  </div>
+            <div class="by"> John Doe Marina Ivanov </div>
+            <h5 class="card-title">Stop self-prescribing antibiotics!Stop self-prescribing antibiotics! Stop self-prescribing antibiotics!</h5>
+            <p class="card-text">An antibiotic is a type of antimicrobial substance active against bacteria.
+              It is the most important type of antibacterial agent for fighting bacterial infections,
+              and antibiotic medications are widely used in the treatment and prevention of such infections.
+              They may either kill or inhibit the growth of bacteria. </p>
+
+              
+              
+              <a href="#" class="card-link">Read more</a>
+              <a href="#" class="card-link">Add to list</a>
+            
+              <div class="read_details_wrapper">
+                <div>
+                <div class="read_time"> 4 mins read  </div>
+                <div class="reactions"> 
+                  <div style="display:inline-block ;">
+                        <i class="material-icons">thumb_up</i>
+                        <span>34</span>
+                    </div>
+        
+                    <div style="display:inline-block;">
+                        <i class="material-icons">thumb_down</i>
+                        <span>346</span>
+                    </div>
+                </div>
+            </div>
+
+              <div class="category_chip">Health</div>
+          </div><!--end of card body-->
+          <div class="card-header footer">
+            
+          </div>  <!--end of card footer-->
+        </div>        <!--end of card-->
+      </div> <!--end of col-->
+
+
+
+
+
+      <div class="col">
+        <div class="card">
+          <img src="test.jpg" class="card-img-top">
+          <div class="card-img-overlay text-white d-flex justify-content-center align-items-end overlay-dark">
+            <p>More sheep.</p>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Stop self-prescribing antibiotics!</h5>
+            <p class="card-text">An antibiotic is a type of antimicrobial substance active against bacteria.
+              It is the most important type of antibacterial agent for fighting bacterial infections,
+              and antibiotic medications are widely used in the treatment and prevention of such infections.
+              They may either kill or inhibit the growth of bacteria. </p>
+          </div>
+          <!--end of card body-->
+        </div>
+        <!--end of card-->
+      </div><!--end of col-->
+      <div class="col">
+        <div class="card">
+          <img src="test.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Stop self-prescribing antibiotics!</h5>
+            <p class="card-text">An antibiotic is a type of antimicrobial substance active against bacteria.
+              It is the most important type of antibacterial agent for fighting bacterial infections,
+              and antibiotic medications are widely used in the treatment and prevention of such infections.
+              They may either kill or inhibit the growth of bacteria. </p>
+          </div>
+          <!--end of card body-->
+        </div><!--end of card-->
+              </div> <!--end of column-->
+
+      <div class="col">
+        <div class="card">
+          <img src="test.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Stop self-prescribing antibiotics!</h5>
+            <p class="card-text">An antibiotic is a type of antimicrobial substance active against bacteria.
+              It is the most important type of antibacterial agent for fighting bacterial infections,
+              and antibiotic medications are widely used in the treatment and prevention of such infections.
+              They may either kill or inhibit the growth of bacteria. </p>
+          </div> <!--end of card body-->
+        </div>  <!--end of card-->
+    </div><!--end of col -->
+
+    <div class="col">
+      <div class="card">
+        <img src="test.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Stop self-prescribing antibiotics!</h5>
+          <p class="card-text">An antibiotic is a type of antimicrobial substance active against bacteria.
+            It is the most important type of antibacterial agent for fighting bacterial infections,
+            and antibiotic medications are widely used in the treatment and prevention of such infections.
+            They may either kill or inhibit the growth of bacteria.fdfdjfueritourotuireotuoituioetueorutoreituioruore </p>
+        </div> <!--end of card body-->
+      </div>  <!--end of card-->
+
+
+
+    </div><!--end of col def-->
+  </div> <!--end of container-->
+
+
+</body>
+
+</html>
