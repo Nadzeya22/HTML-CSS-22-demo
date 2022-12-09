@@ -29,8 +29,7 @@
       --primary_l: #ffc333;
       --primary_d: #cc9000;
       --primary_ll: #ffe9b3;
-s
-      --text_d: #111111;
+      s --text_d: #111111;
       --text_l: #111111ce;
       --background_d: #f6f6f6;
       --background_p: #F6F4EE;
@@ -77,7 +76,7 @@ s
 
     /**card layout**/
     .card {
-      height: 360px;
+      height: 340px;
       border: 0.09em solid var(--primary_ll)
     }
 
@@ -109,7 +108,7 @@ s
       width: 100%;
       overflow: hidden;
       margin-bottom: 0.5em;
-      font-size: 14px;
+      font-size: 12px;
       line-height: 120%;
     }
 
@@ -139,13 +138,13 @@ s
 
     .to {
       display: inline-block;
-      margin-right: 0.8em;
+      margin-right: 0.6em;
       text-transform: uppercase;
       font-weight: 600;
       display: inline-block;
       font-weight: 500;
       font-size: 0.7rem;
-     /** font-family: 'Varela Round', sans-serif;**/
+      /** font-family: 'Varela Round', sans-serif;**/
     }
 
     .to::before {
@@ -158,15 +157,15 @@ s
       display: inline-block;
       letter-spacing: 120%;
       font-weight: 500;
-      font-size: 0.8rem;
+      font-size: 0.6rem;
       /**font-family: 'Varela Round', sans-serif;**/
-     
+
     }
 
     .by {
       text-transform: capitalize;
       display: inline-block;
-      font-size: 0.8rem;
+      font-size: 0.6rem;
       letter-spacing: 120%;
       font-weight: 500;
       /**font-family: 'Varela Round', sans-serif;**/
@@ -193,7 +192,7 @@ s
       position: absolute;
       top: 2%;
       right: 3%;
-  
+
     }
 
     .card_img_overlay {
@@ -209,7 +208,7 @@ s
 
     .read_time {
       color: var(--background_l);
-      font-size: 10px;
+      font-size: 8px;
     }
 
     i+span {
@@ -225,17 +224,18 @@ s
 
 
   <div class="container">
-    <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="row row-cols-1 row-cols-md-3 g-2">
       <div class="col ">
-        <div class="card  ">
-
+        <div class="card">
+<!--image-->
           <img src="test.jpg" class="card-img-top">
           <div class="card_img_overlay">
             <i class="material-icons ">bookmark</i>
             <p class="read_time"> 4 mins read </p>
           </div>
-
-          <div class="card-body d-flex flex-column justify-content-between">
+<!--body-->
+          <div class="card-body d-flex flex-column justify-content-around">
+<!--write details-->
             <div class="d-flex flex-column gap-0">
               <div>
                 <div class="to text-muted"> public </div>
@@ -243,11 +243,13 @@ s
               </div>
               <div class="by text-muted"> John Doe Marina Ivanov </div>
             </div>
+<!--card title on top of the image via absolute position in css-->            
             <h5 class="card-title">Stop self-prescribing antibiotics!Stop self-prescribing antibiotics! Stop
               self-prescribing antibiotics!</h5>
 
-            <div> <!--text and comments-->
-              <p class="card-text">An antibiotic is a type of antimicrobial substance active against bacteria.
+<!--card text and comments-->
+            <div>
+                <p class="card-text">An antibiotic is a type of antimicrobial substance active against bacteria.
                 It is the most important type of antibacterial agent for fighting bacterial infections,
                 and antibiotic medications are widely used in the treatment and prevention of such infections.
                 They may either kill or inhibit the growth of bacteria. </p>
@@ -255,74 +257,158 @@ s
               <span class="text-muted">34 comments</span>
             </div>
 
+<!--card actions-->
             <div class="d-flex justify-content-between align-items-baseline">
               <a href="#" class="card-link">Add to list</a>
               <button type="button" class="btn btn-outline-dark btn-sm">Read</button>
             </div>
 
-
-          
-
-
-
-
+<!--category chip above via absolute position in css-->
             <div class="category_chip">Health</div>
-          </div>
-          <!--end of card body-->
 
-
-        </div>
-        <!--end of card-->
-      </div>
-      <!--end of col-->
-
-
-
-
-
+          </div> <!--end of card body-->
+        </div> <!--end of card-->
+      </div>  <!--end of col-->
 
 
       <div class="col ">
         <div class="card">
-
+<!--image-->
           <img src="test.jpg" class="card-img-top">
-
-
-          <i class="material-icons">bookmark</i>
-          <!--don't put anything between img and i - i is selected via selector-->
-          <span class="read_time"> 4 mins read </span>
-
-
-
-          <div class="card-body">
-            <div class="to"> public </div>
-            <div class="date"> 21 Oct 2022 </div>
-            <div class="by"> John Doe Marina Ivanov </div>
+          <div class="card_img_overlay">
+            <i class="material-icons ">bookmark</i>
+            <p class="read_time"> 4 mins read </p>
+          </div>
+<!--body-->
+          <div class="card-body d-flex flex-column justify-content-between">
+<!--write details-->
+            <div class="d-flex flex-column gap-0">
+              <div>
+                <div class="to text-muted"> public </div>
+                <div class="date text-muted"> 21 Oct 2022 </div>
+              </div>
+              <div class="by text-muted"> John Doe Marina Ivanov </div>
+            </div>
+<!--card title on top of the image via absolute position in css-->            
             <h5 class="card-title">Stop self-prescribing antibiotics!Stop self-prescribing antibiotics! Stop
               self-prescribing antibiotics!</h5>
-            <p class="card-text">An antibiotic is a type of antimicrobial substance active against bacteria.
-              It is the most important type of antibacterial agent for fighting bacterial infections,
-              and antibiotic medications are widely used in the treatment and prevention of such infections.
-              They may either kill or inhibit the growth of bacteria. </p>
 
-            <a href="#" class="card-link">Read more</a>
-            <a href="#" class="card-link">Add to list</a>
+<!--card text and comments-->
+            <div>
+                <p class="card-text">An antibiotic is a type of antimicrobial substance active against bacteria.
+                It is the most important type of antibacterial agent for fighting bacterial infections,
+                and antibiotic medications are widely used in the treatment and prevention of such infections.
+                They may either kill or inhibit the growth of bacteria. </p>
+              <i class="material-icons text-muted ">question_answer</i>
+              <span class="text-muted">34 comments</span>
+            </div>
 
+<!--card actions-->
+            <div class="d-flex justify-content-between align-items-baseline">
+              <a href="#" class="card-link">Add to list</a>
+              <button type="button" class="btn btn-outline-dark btn-sm">Read</button>
+            </div>
+
+<!--category chip above via absolute position in css-->
+            <div class="category_chip">Health</div>
+
+          </div> <!--end of card body-->
+        </div> <!--end of card-->
+      </div>  <!--end of col2-->
+
+      <div class="col ">
+        <div class="card">
+<!--image-->
+          <img src="test.jpg" class="card-img-top">
+          <div class="card_img_overlay">
+            <i class="material-icons ">bookmark</i>
+            <p class="read_time"> 4 mins read </p>
           </div>
+<!--body-->
+          <div class="card-body d-flex flex-column justify-content-between">
+<!--write details-->
+            <div class="d-flex flex-column gap-0">
+              <div>
+                <div class="to text-muted"> public </div>
+                <div class="date text-muted"> 21 Oct 2022 </div>
+              </div>
+              <div class="by text-muted"> John Doe Marina Ivanov </div>
+            </div>
+<!--card title on top of the image via absolute position in css-->            
+            <h5 class="card-title">Stop self-prescribing antibiotics!Stop self-prescribing antibiotics! Stop
+              self-prescribing antibiotics!</h5>
 
-          <div class="category_chip">Health</div>
-        </div>
-        <!--end of card body-->
-        <div class="card-header footer">
+<!--card text and comments-->
+            <div>
+                <p class="card-text">An antibiotic is a type of antimicrobial substance active against bacteria.
+                It is the most important type of antibacterial agent for fighting bacterial infections,
+                and antibiotic medications are widely used in the treatment and prevention of such infections.
+                They may either kill or inhibit the growth of bacteria. </p>
+              <i class="material-icons text-muted ">question_answer</i>
+              <span class="text-muted">34 comments</span>
+            </div>
 
-        </div>
-        <!--end of card footer-->
-      </div>
-      <!--end of card-->
-    </div>
-    <!--end of col2-->
+<!--card actions-->
+            <div class="d-flex justify-content-between align-items-baseline">
+              <a href="#" class="card-link">Add to list</a>
+              <button type="button" class="btn btn-outline-dark btn-sm">Read</button>
+            </div>
+
+<!--category chip above via absolute position in css-->
+            <div class="category_chip">Health</div>
+
+          </div> <!--end of card body-->
+        </div> <!--end of card-->
+      </div>  <!--end of col3-->
+
+      <div class="col ">
+        <div class="card">
+<!--image-->
+          <img src="test.jpg" class="card-img-top">
+          <div class="card_img_overlay">
+            <i class="material-icons ">bookmark</i>
+            <p class="read_time"> 4 mins read </p>
+          </div>
+<!--body-->
+          <div class="card-body d-flex flex-column justify-content-between">
+<!--write details-->
+            <div class="d-flex flex-column gap-0">
+              <div>
+                <div class="to text-muted"> public </div>
+                <div class="date text-muted"> 21 Oct 2022 </div>
+              </div>
+              <div class="by text-muted"> John Doe Marina Ivanov </div>
+            </div>
+<!--card title on top of the image via absolute position in css-->            
+            <h5 class="card-title">Stop self-prescribing antibiotics!Stop self-prescribing antibiotics! Stop
+              self-prescribing antibiotics!</h5>
+
+<!--card text and comments-->
+            <div>
+                <p class="card-text">An antibiotic is a type of antimicrobial substance active against bacteria.
+                It is the most important type of antibacterial agent for fighting bacterial infections,
+                and antibiotic medications are widely used in the treatment and prevention of such infections.
+                They may either kill or inhibit the growth of bacteria. </p>
+              <i class="material-icons text-muted ">question_answer</i>
+              <span class="text-muted">34 comments</span>
+            </div>
+
+<!--card actions-->
+            <div class="d-flex justify-content-between align-items-baseline">
+              <a href="#" class="card-link">Add to list</a>
+              <button type="button" class="btn btn-outline-dark btn-sm">Read</button>
+            </div>
+
+<!--category chip above via absolute position in css-->
+            <div class="category_chip">Health</div>
+
+          </div> <!--end of card body-->
+        </div> <!--end of card-->
+      </div>  <!--end of col4-->
 
 
+
+      
 
 
 
