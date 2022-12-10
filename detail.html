@@ -12,6 +12,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -26,9 +32,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Login</a>
-                        </li>
+                        </li> -->
                         <!-- <li class="nav-item">
                             <a class="nav-link" href="#">Categories</a>
                         </li> -->
@@ -54,10 +60,12 @@
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2 bg-dark text-white" type="search" placeholder="Search"
+                        <input class="form-control me-2 bg-light text-white" type="search" placeholder="Search"
                             aria-label="Search">
-                        <button class="btn btn-outline-dark" type="submit">Search</button>
+                        <!-- <button class="btn btn-outline-dark" type="submit">Search</button> -->
                     </form>
+                    <a class="nav-link active" aria-current="page" href="#">Login</a>
+
                 </div>
             </div>
         </nav>
@@ -88,12 +96,11 @@
                         </div>
                         <div class="d-flex flex-row">
                             <div class="pt-6">
-                                <button type="button" class="btn btn-warning">Follow</button>
-                                <button type="button" class="btn btn-info">Message</button>
+                                <button type="button" class="btn follow-button">Follow</button>
+                                <button type="button" class="btn message-button">Message</button>
                             </div>
                         </div>
                     </div>
-
                     <div>
                         <h1>An Open Letter to Nasa...</h1>
                     </div>
@@ -153,14 +160,129 @@
                             H.
                             Rackham.</p>
                     </div>
+                    <div>
+                        <h4>Comments</h4>
+                        <div class="form-floating col-8">
+                            <form action="/html/tags/html_form_tag_action.cfm" method="post">
+                                <div>
+                                    <textarea class="form-control" placeholder="Leave a comment here"
+                                        id="floatingTextarea"></textarea>
+                                    <!-- <label for="floatingTextarea">Comments</label> -->
+                                </div>
+                                <div class="mt-2">
+                                    <input type="submit" value="Submit">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="d-flex flex-row mt-3">
+                            <div class="me-3">
+                                <img src="images/universe.jpg" class="img-thumbnail commentImage" alt="...">
+                            </div>
+                            <div class="d-flex flex-column col-8">
+                                <div class="d-flex flex-row">
+                                    <span>
+                                        <h6>Ayesha Shahzad</h6>
+                                    </span>
+                                    <div class="ps-3">04.12.22</div>
+                                </div>
+                                <div>
+                                    When I was a teenager I read a lot of sci-fi. I enjoyed the stories about colonizing
+                                    the Moon, or Mars, or even Venus (back when we thought it might be habitable). But
+                                    I'm older now and when I look at the pictures of rover tracks on the Moon or Mars I
+                                    just feel a bit of sadness that humans have gone and messed up another pristine
+                                    place.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+
                 <div class="col-3">
                     <div>
                         <div>
                             <h2>Popular Letters</h2>
                         </div>
                         <div>
-                            <div>
+                            <div class="col pb-3">
+                                <div class="card pb-2 card_small">
+                                    <!--image-->
+                                    <img src="images/universe.jpg" class="card-img-top ">
+                                    <div class="card_img_overlay">
+                                        <i class="material-icons ">bookmark</i>
+                                    </div>
+
+                                    <!--body-->
+                                    <div class="card-body d-flex flex-column justify-content-between pt-6 ">
+                                        <!--write details-->
+
+                                        <!--card title on top of the image via absolute position in css-->
+                                        <h5 class="card-title">Stop self-prescribing antibiotics!Stop self-prescribing antibiotics! Stop self-prescribing antibiotics!</h5>
+
+                                        <!--card text -->
+                                        <p class="card-text mt-6">An antibiotic is a type of antimicrobial substance active against bacteria.
+                                        It is the most important type of antibacterial agent for bacterial infections, and antibiotic medications are widely used in the treatment and prevention of such infections. They may either kill or inhibit the growth of bacteria. </p>
+
+                                        <!--category chip above via absolute position in css-->
+                                        <div class="category_chip">Health</div>
+
+                                    </div>
+                                    <!--end of card body-->
+                                </div>
+                            </div>
+                            <div class="col pb-3">
+                                <div class="card pb-2 card_small">
+                                    <!--image-->
+                                    <img src="images/universe.jpg" class="card-img-top ">
+                                    <div class="card_img_overlay">
+                                        <i class="material-icons ">bookmark</i>
+                                    </div>
+
+                                    <!--body-->
+                                    <div class="card-body d-flex flex-column justify-content-between pt-6 ">
+                                        <!--write details-->
+
+                                        <!--card title on top of the image via absolute position in css-->
+                                        <h5 class="card-title">Stop self-prescribing antibiotics!Stop self-prescribing antibiotics! Stop self-prescribing antibiotics!</h5>
+
+                                        <!--card text -->
+                                        <p class="card-text mt-6">An antibiotic is a type of antimicrobial substance active against bacteria.
+                                        It is the most important type of antibacterial agent for bacterial infections, and antibiotic medications are widely used in the treatment and prevention of such infections. They may either kill or inhibit the growth of bacteria. </p>
+
+                                        <!--category chip above via absolute position in css-->
+                                        <div class="category_chip">Health</div>
+
+                                    </div>
+                                    <!--end of card body-->
+                                </div>
+                            </div>
+                            <div class="col pb-3">
+                                <div class="card pb-2 card_small">
+                                    <!--image-->
+                                    <img src="images/universe.jpg" class="card-img-top ">
+                                    <div class="card_img_overlay">
+                                        <i class="material-icons ">bookmark</i>
+                                    </div>
+
+                                    <!--body-->
+                                    <div class="card-body d-flex flex-column justify-content-between pt-6 ">
+                                        <!--write details-->
+
+                                        <!--card title on top of the image via absolute position in css-->
+                                        <h5 class="card-title">Stop self-prescribing antibiotics!Stop self-prescribing antibiotics! Stop self-prescribing antibiotics!</h5>
+
+                                        <!--card text -->
+                                        <p class="card-text mt-6">An antibiotic is a type of antimicrobial substance active against bacteria.
+                                        It is the most important type of antibacterial agent for bacterial infections, and antibiotic medications are widely used in the treatment and prevention of such infections. They may either kill or inhibit the growth of bacteria. </p>
+
+                                        <!--category chip above via absolute position in css-->
+                                        <div class="category_chip">Health</div>
+
+                                    </div>
+                                    <!--end of card body-->
+                                </div>
+                            </div>
+                            <!-- <div>
                                 <img src="images/universe.jpg" class="img-thumbnail contentImage" alt="...">
                                 <h6>An Open Letter to Nasa...</h6>
                             </div>
@@ -171,7 +293,7 @@
                             <div>
                                 <img src="images/universe.jpg" class="img-thumbnail contentImage" alt="...">
                                 <h6>An Open Letter to Nasa...</h6>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div>
@@ -179,26 +301,23 @@
                             <h2>Related Letters</h2>
                         </div>
                         <div>
-                            <div class="d-flex flex-row mb-3">
-                                <div>
-                                    <p>Ayesha Shahzad in Organisation</p>
-                                    <h6>An Open Letter to Nasa...</h6>
+                            <div class="d-flex flex-row mb-3 related-letter-card">
+                                <img src="images/universe.jpg" class="p-1 relatedImage" alt="...">
+                                <div class="ms-2">
+                                    <h6>An Open Letter to Nasa by Ayesha Shahzad</h6>
                                 </div>
-                                <img src="images/universe.jpg" class="img-thumbnail relatedImage" alt="...">
                             </div>
-                            <div class="d-flex flex-row mb-3">
-                                <div>
-                                    <p>Ayesha Shahzad in Organisation</p>
-                                    <h6>An Open Letter to Nasa...</h6>
+                            <div class="d-flex flex-row mb-3 related-letter-card">
+                                <img src="images/universe.jpg" class="p-1 relatedImage" alt="...">
+                                <div class="ms-2">
+                                    <h6>An Open Letter to Nasa by Ayesha Shahzad</h6>
                                 </div>
-                                <img src="images/universe.jpg" class="img-thumbnail relatedImage" alt="...">
                             </div>
-                            <div class="d-flex flex-row mb-3">
-                                <div>
-                                    <p>Ayesha Shahzad in Organisation</p>
-                                    <h6>An Open Letter to Nasa...</h6>
+                            <div class="d-flex flex-row mb-3 related-letter-card">
+                                <img src="images/universe.jpg" class="p-1 relatedImage" alt="...">
+                                <div class="ms-2">
+                                    <h6>An Open Letter to Nasa by Ayesha Shahzad</h6>
                                 </div>
-                                <img src="images/universe.jpg" class="img-thumbnail relatedImage" alt="...">
                             </div>
                         </div>
                     </div>
@@ -207,9 +326,15 @@
                             <h2>Popular Categories</h2>
                         </div>
                         <div>
-                            <p>Organisation</p>
-                            <p>Politics</p>
-                            <p>Entertainment</p>
+                            <button type="button" class="btn btn-outline-dark btn-sm mb-2">Organisation</button>
+                            <button type="button" class="btn btn-outline-dark btn-sm mb-2">Politics</button>
+                            <button type="button" class="btn btn-outline-dark btn-sm mb-2">Science</button>
+                            <button type="button" class="btn btn-outline-dark btn-sm mb-2">Entertainment</button>
+                            <button type="button" class="btn btn-outline-dark btn-sm mb-2">Sports</button>
+                            <button type="button" class="btn btn-outline-dark btn-sm mb-2">Big Data</button>
+                            <button type="button" class="btn btn-outline-dark btn-sm mb-2">Virtual Reality</button>
+                            <button type="button" class="btn btn-outline-dark btn-sm mb-2">Web3</button>
+                            <button type="button" class="btn btn-outline-dark btn-sm mb-2">History</button>
                         </div>
                     </div>
                 </div>
