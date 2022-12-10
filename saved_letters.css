@@ -58,10 +58,13 @@
 
   /**card layout**/
   .card {
-    height: 360px;
+    height: 380px;
     border: 0.1em solid var(--primary_ll)
   }
-
+.card:hover {
+ 
+  border: 2px solid var(--primary);
+}
   .card_small {
     height: 220px;
   }
@@ -93,7 +96,8 @@
     width: 100%;
     overflow: hidden;
     margin-bottom: 0.5em;
-    font-size: 14px;
+    font-size: 1rem;
+    letter-spacing: 0.02rem;
     line-height: 120%;
   }
 
@@ -187,7 +191,9 @@
     text-transform: lowercase;
     font-weight: 100;
   }
-
+ .card .material-icons {
+    color: var(--primary);
+  }
   
 /**overlays**/
   img+i {
@@ -201,7 +207,7 @@
   .card h5 {
     /**this truncates the text after 4 lines, change in the line clamp property**/
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     width: 100%;
         overflow: hidden;
@@ -262,13 +268,13 @@
 
   .read_time {
     font-family: 'Varela Round', sans-serif;
-    font-size: 8px;
+    font-size: 0.8rem;
       }
 
   i+span {
     /**comments**/
     font-family: 'Varela Round', sans-serif;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 
   /**reading list**/
@@ -321,18 +327,23 @@ font-size: smaller;
 
       .card .btn-light {
         background-color: transparent;
-        color:#cc9000;
+       
+        color:var(--primary);
         border: none;
       }
       .card .btn-light:hover {
        
-        color:var(--primary);
+        color:#cc9000;
         
       }
 
-      .float {
-        position: absolute;
-        bottom: 20%;
-        right: 20%;
-        z-index: 2;
-      }
+     .btn-primary {
+      width: 240px;
+      background-color: var(--primary);
+      border-color: var(--primary_d);
+           }
+
+           .btn-primary:hover {
+            background-color: var(--primary_d);
+           
+           }
