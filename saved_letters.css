@@ -237,6 +237,10 @@ nav_cta {
   border: 1px solid var(--primary_l);
   background-color: var(--primary_l);
 }
+.category_selected {
+  border: var(--border_d);
+  color: var(--primary_d) !important;
+}
 
 .card .category_chip {
   position: absolute;
