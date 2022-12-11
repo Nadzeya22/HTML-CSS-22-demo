@@ -10,54 +10,43 @@
     --background_d: #f6f6f6;
     --background_p: #F6F4EE;
     --background_l: white;
-
+     
   }
-  .navbar p, li, .btn, input, a {
+  .navbar p, li, .btn, input, a , .form-control, .form-select, option{
     font-family: 'Varela Round', sans-serif;
     color: var(--text_d);
   }
 
-.navbar .btn-primary {
-    background-color: var(--background_l);
-    color: var(--primary);
-    border-color: var(--primary_ll);
-  
-  }
- .navbar .nav-item{
-    color: #f6f6f6;
-   
- }
-.navbar .btn-outline {
- 
-    border-color: none;
-    color: var(--text_d);
-    background-color: none;
-    width: 160px;
-    height: 40px;
-    font-size: 18px;
-    font-weight: 500;
-    }
-    .navbar .btn-outline:hover {
-      background-color: var(--background_l);
-        border-color: var(--background_l);
-        font-weight: 500;
-        box-shadow: 1px 1px 0.8em  #11111126
 
-        }
-.navbar .btn-outline {
-  position:absolute;
-  left: 45%;
  
-}
+
+
+ .nav_cta {
+   border-color: none;
+  color: var(--text_d);
+  background-color: var(--primary_ll);
+  width: 8em;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 500;
+   }
+  .nav_cta:hover {
+    background-color: var(--background_l);
+      border-color: var(--background_l);
+      font-weight: 500;
+      box-shadow: 1px 1px 0.8em  #11111126}
+
+
 
 .navbar input {
-  background-color: var(--primary_ll);
-  border-color: var(--primary_l);
+  background-color: var(--background_l);
+  border-color: transparent;
 }
 
- .navbar .material-icons {
-  color: var(--text_d);
- }
+.navbar a:hover{
+color:var(--background_l) !important;
+}
+
 .navbar .dropdown-item {
   color: var(--text_d);
 }
