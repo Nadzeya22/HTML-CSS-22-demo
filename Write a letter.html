@@ -22,9 +22,11 @@
   <link rel="stylesheet" href="saved_letters.css">
   <link rel="stylesheet" href="topnavbar.css">
   <style>
-
-
-
+    @media only screen and (max-width: 1000px) {
+      body {
+        background-color: white;
+      }
+    }
   </style>
 
 
@@ -32,22 +34,22 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg primary_color fixed-top d-flex justify-content-center" ">
+    <nav class="navbar  navbar-expand-lg primary_color fixed-top d-flex justify-content-center" ">
       <div class=" container-fluid ">
-        <a class=" navbar-brand current" href="#">Enveep</a>
+        <a class=" navbar-brand" href="#">Enveep</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <div>
-            <button class="btn btn-outline " type="submit">Write a letter</button>
+            <button class="btn btn-outline nav_cta  " type="submit">Write a letter</button>
           </div>
          
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <li class="nav-item  dropdown primary_color_d">
+            <a class="nav-link UI_copy dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Categories
             </a>
             <ul class="dropdown-menu primary_color">
@@ -60,7 +62,7 @@
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link UI_copy dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               My letters
             </a>
             <ul class="dropdown-menu">
@@ -70,7 +72,21 @@
               <li><a class="dropdown-item" href="#">My lists</a></li>
             </ul>
           </li>
-
+          <li class="nav-item dropdown">
+            <a class="nav-link UI_copy dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Ayesha 22
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Account</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </li>
+    
         </ul>
 
         <form role="search">
@@ -78,146 +94,156 @@
         </form>
       </div>
 
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"
-          aria-expanded="false">
-          <i class="material-icons ms-2">face</i>
-        </a>
-        <ul class="dropdown-menu dropdown-menu-end">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li>
-            <hr class="dropdown-divider">
-          </li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
-      </li>
-
+      
       </div>
-    </nav>
+  </nav>
   </header>
 
 
-  <div class="container-fluid pt-5 mt-1 me-2 ">
+  <div class="container-fluid  pt-5 mt-1  ">
 
     <nav style="--bs-breadcrumb-divider: ' >';" aria-label="breadcrumb">
-        <ol class="breadcrumb mt-4 mb-4">
-          <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item current" aria-current="page">Write a letter</li>
-        </ol>
-      </nav>
+      <ol class="breadcrumb mt-4 mb-4">
+        <li class="breadcrumb-item "><a href="#">Home</a></li>
+        <li class="breadcrumb-item " aria-current="page">Write a letter</li>
 
-    <div class="row justify-content-center "> <!--main row wrapper-->
-      <div class="col-lg-10 col-xs-1 bg-white p-4">
-        <h1>
-          Write a letter
-        </h1>
-<div>
-        <div class="mb-3"><!--title-->
-          <label for="formGroupExampleInput" class="form-label">Title</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
-          <span id="TitleValidation" class="form-text">
-            Must be 8-20 characters long.
-          </span>
-        </div><!--end of title field-->
-        
+      </ol>
+    </nav>
 
-        <div class="mb-3"><!--textarea-->
-          <label for="letter_field" class="form-label">Example textarea</label>
+    <div class="row justify-content-center  ">
+      <!--main row wrapper-->
+      <div class="col-lg-10 col-xs-1  ">
+        <div class="bg-white p-md-4 mb-5">
+          <!--content wrapper-->
+          <h1>
+            Write a letter
+          </h1>
+          <div>
 
-          <div class="my-1">
-            <div class="btn-toolbar">
-                <div class="btn-group me-2">
-                    <button type="button" class="btn btn-primary">
-                      <i class="material-icons">add</i>
-                    </button>
-                    <button type="button" class="btn btn-primary">
-                      <i class="material-icons">add</i>
-                    </button>
-                    <button type="button" class="btn btn-primary">
-                      <i class="material-icons">add</i>
-                    </button>
-                    <button type="button" class="btn btn-primary">
-                      <i class="material-icons">add</i>
-                    </button>
-                </div>
-                <div class="btn-group me-2">
-                    <button type="button" class="btn btn-primary">
-                      <i class="material-icons">add</i>
-                    </button>
-                    <button type="button" class="btn btn-primary">
-                      <i class="material-icons">add</i>
-                    </button>
-                    <button type="button" class="btn btn-primary">
-                      <i class="material-icons">add</i>
-                    </button>
-                    <button type="button" class="btn btn-primary">
-                      <i class="material-icons">add</i>
-                    </button>
-                </div>
-               
+            <div class="my-3 py-3">
+              <h4>Letter heading</h4>
+              <div class="mb-3">
+                <!--title-->
+
+                <input type="text" class="form-control" id="formGroupExampleInput">
+                <span id="TitleValidation" class="form-text">
+                  Must be 8-20 characters long.
+                </span>
+              </div>
+              <!--end of title field-->
             </div>
-        <!--end of text toolbar-->
+            <!--end of title wrapper-->
+            <div class="my-3 py-3">
+              <h4>Letter</h4>
+              <div class="mb-3">
+                <!--textarea-->
 
-          <textarea class="form-control" id="letter_field" rows="3"></textarea>
-        </div><!--end of textarea-->
 
-        <div class="row"> <!--attachment and category wrapper-->
-          <div class="col-md">
-            <div class="mb-3">
-              <label for="formFile" class="form-label">Attach an image</label>
-              <input class="form-control" type="file" id="formFile" placeholder="No attached files">
-            </div> <!--end of select image-->
+                <div class="my-1">
+                  <div class="btn-toolbar my-2 py-2 gap-2">
+
+                    <button type="button" class="btn btn-light toolbar_btn">
+                      <i class="material-icons ">format_bold</i>
+                    </button>
+                    <button type="button" class="btn btn-light toolbar_btn">
+                      <i class="material-icons">format_italic</i>
+                    </button>
+                    <button type="button" class="btn btn-light toolbar_btn">
+                      <i class="material-icons">format_underline</i>
+                    </button>
+                    <button type="button" class="btn btn-light toolbar_btn">
+                      <i class="material-icons">link</i>
+                    </button>
+                    <button type="button" class="btn btn-light toolbar_btn">
+                      <i class="material-icons">format_quote</i>
+
+                    </button>
+                    <button type="button" class="btn btn-light toolbar_btn">
+                      <i class="material-icons">text_fields</i>
+                    </button>
+                    <button type="button" class="btn btn-light toolbar_btn">
+                      <i class="material-icons">spellcheck</i>
+                    </button>
+
+                  </div>
+                  <!--end of text toolbar-->
+
+                  <textarea class="form-control" id="letter_field" style="height:30em;" rows="3"></textarea>
+                </div>
+                <!--end of textarea-->
+
+              </div>
+              <!--end of textarea wrapper-->
+
+              <div class="row my-5 py-3">
+                <!--attachment and category wrapper-->
+
+                <div class="col-md ">
+                  <div class="mb-3">
+                    <h4 class="mb-2">Image</h4>
+
+
+                    <input class="form-control" type="file" id="formFile" placeholder="No attached files">
+                  </div>
+                  <!--end of select image-->
+                </div>
+
+                <div class="col-md">
+                  <h4>Category</h4>
+
+                  <div class="input-group">
+                    <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                      <option selected>Choose...</option>
+                      <option value="1">politics</option>
+                      <option value="2">Education</option>
+                      <option value="3">society</option>
+                      <option value="4">world news</option>
+                      <option value="5">environment</option>
+                      <option value="6">health</option>
+                      <option value="7">family</option>
+                      <option value="8">travel</option>
+                      <option value="9">sport</option>
+                      <option value="10">media</option>
+                      <option value="11">life</option>
+                      <option value="12">technology</option>
+                      <option value="13">science</option>
+                      <option value="14">entertainment</option>
+                      <option value="15">culture</option>
+                      <option value="16">books</option>
+                      <option value="17">art</option>
+                      <option value="18">business</option>
+                      <option value="19">environment</option>
+                    </select>
+
+                  </div>
+                  <!--end of select category-->
+                </div>
+              </div>
+              <!--end of attachment and category wrapper-->
+            </div>
+            <!--end of fields wrapper-->
+
+
+
+            <div class="container ">
+              <div class="row my-3 py-3">
+                <div class="d-none d-md-block col-lg-8"></div>
+                <div class="col-md-6 col-lg-2 my-1">
+                  <button style="width:100%;" class="btn btn-outline write_secondary py-1 " type="button">Save </button>
+                </div>
+                <div class="col-md-6 col-lg-2 pull-right my-1 ">
+                  <button style="width:100%;" class="btn btn-primary write_cta py-1 ol-md-6"
+                    type="button">Publish</button>
+                </div>
+              </div>
+            </div>
+            <!--end of all content-->
           </div>
-   
-          <div class="col-md">
-            <label for="inputGroupSelect04" class="form-label">Select a category</label>
-            <div class="input-group">
-              <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
-                <option selected>Choose...</option>
-                <option value="1">politics</option>
-                <option value="2">education</option>
-                <option value="3">society</option>
-                <option value="3">world news</option>
-                <option value="3">environment</option>
-                <option value="3">health</option>
-                <option value="3">family</option>
-                <option value="3">travel</option>
-                <option value="3">sport</option>
-                <option value="3">media</option>
-                <option value="3">life</option>
-                <option value="3">technology</option>
-                <option value="3">science</option>
-                <option value="3">entertainment</option>
-                <option value="3">culture</option>
-                <option value="3">books</option>
-                <option value="3">art</option>
-                <option value="3">business</option>
-                <option value="3">environment</option>
-              </select>
-              
-            </div><!--end of select category-->
-          </div>
-        </div><!--end of attachment and category wrapper-->
-      </div><!--end of fields wrapper-->
+          <!--end of page wrapper-->
 
-   
-      
-   <div class="container">
-    <div class="row">
-      <div class="d-none d-md-block col-lg-8"></div>
-      <div class="col-md-6 col-lg-2">
-      <button  style="width:100%;" class="btn btn-outline  " type="button">Save </button>
-    </div>
-    <div class="col-md-6 col-lg-2 pull-right">
-      <button style="width:100%;"style="width:100%;" class="btn btn-primary ol-md-6" type="button">Publish</button>
-    </div>
-    </div>
-  </div>
-  
 
-      
- 
+
+
 </body>
 
 </html>
