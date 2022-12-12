@@ -125,7 +125,7 @@ textarea {
   font-family: 'Varela Round', sans-serif;
   /* position: absolute; */
   top: 12%;
-  color: var(--primary_d);
+  color: var(--primary_d) !important;
   width: 90%;
   font-weight: 400;
   font-size: 20px;
@@ -240,7 +240,7 @@ i+span {
   background-color: var(--background_l);
   width: fit-content;
   text-transform: uppercase;
-  border: var(--border_p_m);
+  border: var(--border_p_m) !important;
   letter-spacing: 0.06rem;
   font-size: .7rem;
   

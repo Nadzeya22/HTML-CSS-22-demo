@@ -10,6 +10,10 @@
   --background_d: #f6f6f6;
   --background_p: #F6F4EE;
   --background_l: white;
+  --border_p_s: 0.01em solid var(--primary_ll);
+  --border_p_m: 0.1em solid var(--primary_ll);
+  --border_d: 0.01em solid var(--primary_d);
+  --border_l: 0.01em solid var(--background_p);
 
 }
 
@@ -22,7 +26,7 @@ a,
 .form-select,
 option {
   font-family: 'Varela Round', sans-serif;
-  color: var(--text_d);
+  color: var(--text_d) !important;
 }
 
 
