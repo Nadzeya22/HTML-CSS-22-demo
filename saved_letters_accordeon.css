@@ -406,6 +406,21 @@ i+span {
 }
 
 /**reading list**/
+.accordionLists {
+  
+  color: var(--text_d);
+  background-color: var(--background_l);
+  border: var(--border);
+  font-family: 'Varela Round', sans-serif;
+}
+
+  .reading_list {
+  color: var(--text_d);
+  background-color: var(--background_l);
+  border: var(--border);
+  font-family: 'Varela Round', sans-serif;
+
+}
 
 .reading_list .form-control {
   color: var(--text_d);
@@ -420,15 +435,13 @@ i+span {
   cursor: pointer;
 }
 
-.reading_list .rounded-pill {
+.panel .rounded-pill {
   background-color: var(--primary_ll);
   color: var(--primary_d);
 }
 
-.reading_list li {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow:clip
+.panel li {
+ 
 
   border: 0.1em solid var(--primary_ll);
   font-family: 'Varela Round', sans-serif;
@@ -438,7 +451,7 @@ i+span {
 
 }
 
-.reading_list li:hover {
+.panel li:hover {
   border: 1px solid var(--primary_l);
     background-color: var(--primary_l);
 }
@@ -551,6 +564,35 @@ width:100%;
 }
 
 
+
+
+.accordion {
+  background-color: var(--background_l);
+  color: var(--text_d);
+   font-family: 'Varela Round', sans-serif;
+font-size: 1rem;
+    cursor: pointer;
+  
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: var(--primary); 
+  color: var(--text_d);
+  }
+
+.panel {
+ 
+  display: none;
+  background-color: transparent;
+  overflow: hidden;
+ 
+}
+
 /**my lists
 
 td:hover {
@@ -572,46 +614,5 @@ tbody:hover + .btn-light {
   font-family: 'Varela Round', sans-serif;
 
 }
-
-
-.accordion {
-  background-color: var(--background_l);
-  color: var(--text_d);
-   font-family: 'Varela Round', sans-serif;
-font-size: 1.4rem;
-    cursor: pointer;
-  padding:0.5em 1em;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  transition: 0.4s;
-}
-
-.active, .accordion:hover {
-  background-color: var(--primary_ll); 
-  color: var(--primary_d);
-  }
-
-.panel {
-  padding: 0.2em 1em;
-  display: none;
-  background-color: white;
-  overflow: hidden;
- 
-}
-.td {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  color: var(--text_d);
-  font-family: 'Noto Serif', serif;
- 
-
-}
-th {
-
-}
 **/
-
 

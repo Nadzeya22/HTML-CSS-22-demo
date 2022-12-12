@@ -125,7 +125,7 @@
           <a href="#"> Published</a>
           <a href="#"> Drafts</a>
           <a href="#"> Lists</a>
-        </div>
+      </div>
         
        
 
@@ -601,96 +601,121 @@
 
 
           <div class="col-2 d-none d-lg-block align-content-start  ">
-            <div class="text-start reading_list ">
-              <div class="d-flex align-items-center gap-2">
-                <i class="material-icons">receipt</i>
-                <h2> My lists</h2>
-              </div>
-              <div class="input-group mb-2 mt-2">
-                    
-                <input type="text" class="form-control primary_color_d" placeholder="New list" aria-label="Username" aria-describedby="basic-addon1">
-                <span class="input-group-text " id="basic-addon1"><i class="material-icons primary_color_d">add</i></span>
-              </div>
-              <ul class="mt-2  list-group text-wrap text-start ">
+            <div class="text-start ">
+              <div >
+                <button class="accordion p-2 rounded text-start">Pinned lists</button>
+                <div class="panel">
+                  <ul class="mt-2  list-group text-wrap text-start ">
+                      
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Forward to Jane
+    
+                      <span class="ms-2 badge rounded-pill">677</span>
+    
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Fun stuff
+    
+                      <span class="ms-2 badge rounded-pill">78</span>
+    
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Complains
+    
+    
+                      <span class="ms-2 badge rounded-pill">6</span>
+    
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Drugs
+    
+                      <span class="ms-2 badge rounded-pill">6</span>
+    
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Kids and schools
+    
+                      <span class="ms-2 badge rounded-pill">567</span>
+    
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      AI
+                      <span class="ms-2 badge rounded-pill">2</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Forward to Jane
+    
+                      <span class="ms-2 badge rounded-pill">13</span>
+    
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Fun stuff
+                      <span class="ms-2 badge rounded-pill">2</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Complains
+    
+                      <span class="ms-2 badge rounded-pill">5</span>
+    
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Drugs
+    
+                      <span class="ms-2 badge rounded-pill">9</span>
+    
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Kids and schools
+    
+                      <span class="ms-2 badge rounded-pill">67</span>
+    
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      AI
+    
+                      <span class="ms-2 badge rounded-pill">2</span>
+    
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-end ">
+                      <a href="#" class="mt-3 text-decoration-none p-0">See all</a>
+    
+                      <span class="ms-2 badge rounded-pill bg-white primary_color">24 lists</span>
+    
+                    </li>
+                  </ul>
+    
                 
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  Forward to Jane
+                
+                
+                <script>
+                var acc = document.getElementsByClassName("accordion");
+                var i;
+                
+                for (i = 0; i < acc.length; i++) {
+                  acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                      panel.style.display = "none";
+                    } else {
+                      panel.style.display = "block";
+                    }
+                  });
+                }
+                </script>
+                      </div>
+                      </div>
+                
+                    </div>  <!--end of accordeon wrapper-->     
+                    <div class="input-group mb-2 mt-2">
 
-                  <span class="ms-2 badge rounded-pill">677</span>
-
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  Fun stuff
-
-                  <span class="ms-2 badge rounded-pill">78</span>
-
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  Complains
-
-
-                  <span class="ms-2 badge rounded-pill">6</span>
-
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  Drugs
-
-                  <span class="ms-2 badge rounded-pill">6</span>
-
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  Kids and schools
-
-                  <span class="ms-2 badge rounded-pill">567</span>
-
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  AI
-                  <span class="ms-2 badge rounded-pill">2</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  Forward to Jane
-
-                  <span class="ms-2 badge rounded-pill">13</span>
-
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  Fun stuff
-                  <span class="ms-2 badge rounded-pill">2</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  Complains
-
-                  <span class="ms-2 badge rounded-pill">5</span>
-
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  Drugs
-
-                  <span class="ms-2 badge rounded-pill">9</span>
-
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  Kids and schools
-
-                  <span class="ms-2 badge rounded-pill">67</span>
-
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  AI
-
-                  <span class="ms-2 badge rounded-pill">2</span>
-
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-end ">
-                  <a href="#" class="mt-3 text-decoration-none p-0">See all</a>
-
-                  <span class="ms-2 badge rounded-pill bg-white primary_color">24 lists</span>
-
-                </li>
-              </ul>
-
-            </div>
+                      <input type="text" class="form-control primary_color_d text-start" placeholder="New list" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                      <span class="input-group-text " id="basic-addon1"><i
+                          class="material-icons primary_color_d">add</i></span>
+                    </div>
+             
+              
 
           </div>
           <!--end of col3-->
