@@ -24,26 +24,28 @@ body {
   height: 100px;
   width: 100px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .commentImage {
   height: 60px;
   width: 60px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .contentImage {
   border-radius: 2%;
 }
 
-.authorName {
-  height: 100px;
-  padding-top: 30px;
+.copyright {
+  font-family: var(--bs-body-font-family) !important;
 }
 
 .relatedImage {
   height: 48px;
   width: 48px;
+  object-fit: cover;
 }
 
 .emptyDiv {
@@ -106,10 +108,30 @@ textarea {
 .hcard-image {
   height: 197px;
   width: 100%;
+  object-fit: cover;
 }
 
 .footer {
+  background-color: var(--primary_ll);
+}
+
+.copyright-footer {
   background-color: var(--primary);
+}
+
+.social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: var(--primary_ll);
+  color: var(--text_d) !important;
+  line-height: 1;
+  padding: 9px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
 }
 
 .popular-categories button {
@@ -256,3 +278,4 @@ i+span {
   border: var(--border_d);
   color: var(--primary_d) !important;
 }
+
