@@ -1,7 +1,6 @@
 :root {
   /**root color styles**/
   --primary: #ffb400;
-
   --primary_l: #ffc333;
   --primary_d: #cc9000;
   --primary_ll: #ffe9b3;
@@ -14,7 +13,6 @@
   --border_p_m: 0.1em solid var(--primary_ll);
   --border_d: 0.01em solid var(--primary_d);
   --border_l: 0.01em solid var(--background_p);
-
 }
 
 .UI_copy {
@@ -75,7 +73,6 @@
 
 .sidenav a:hover {
   box-shadow: 2 px 4 px 10px 4px var(--text_d);
-  
   background-color: var(--primary_ll);
 }
 
@@ -653,7 +650,6 @@ font-size: 1.1rem;
     font-size: 1rem;
     border-radius: .375rem;
     text-decoration: none;
-
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
