@@ -73,7 +73,7 @@
 
 .sidenav a:hover {
   box-shadow: 2 px 4 px 10px 4px var(--text_d);
-  color: var(--primary);
+  color: var(--primary_d);
   /**background-color: var(--primary_ll);**/
 }
 
@@ -92,7 +92,7 @@
 }
 
 .breadcrumb a:hover {
-  color: var(--primary);
+  color: var(--primary_d);
 }
 
 .card h1,
@@ -193,11 +193,20 @@ nav_cta {
   cursor: pointer;
 }
 
-.line-clamp-5 {
+.line_clamp_5 {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
+
+.line_clamp_2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  width:100%;
+  
+}
+
 
 
 .card p {
@@ -248,6 +257,8 @@ nav_cta {
 .category:hover {
   border: 1px solid var(--primary_l);
   background-color: var(--primary_l);
+  color: var(--primary_d);
+  font-weight: bolder;
 }
 
 .category_selected {
@@ -414,7 +425,7 @@ img+i {
 
 
 
-.read_time {
+.read_time_n {
   font-family: 'Varela Round', sans-serif;
   font-size: 0.8rem;
 }
@@ -422,9 +433,11 @@ img+i {
 i+span {
   /**comments**/
   font-family: 'Varela Round', sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
-
+ .comments {
+  font-size: 0.8rem;
+ }
 /**reading list**/
 
 .reading_list .form-control {
@@ -578,27 +591,8 @@ td .btn-light {
 }
 
 
-/**my lists
 
-td:hover {
-  background-color: #cc9000;
-}
-tbody:hover + .btn-light {
-  display: block;
-  border: 1px solid var(--border);
-  background-color: transparent;
-    color: var(--primary);
-  
-  }
 
-.accordeon_enveep {
-  
-  color: var(--text_d);
-  background-color: var(--background_l);
-  border: var(--border);
-  font-family: 'Varela Round', sans-serif;
-
-}
 
 
 .accordion {
@@ -607,7 +601,7 @@ tbody:hover + .btn-light {
    font-family: 'Varela Round', sans-serif;
 font-size: 1.4rem;
     cursor: pointer;
-  padding:0.5em 1em;
+  padding:0.5em 0.5em;
   width: 100%;
   border: none;
   text-align: left;
@@ -621,22 +615,47 @@ font-size: 1.4rem;
   }
 
 .panel {
-  padding: 0.2em 1em;
+  padding: 0.5em;
   display: none;
   background-color: white;
   overflow: hidden;
  
 }
-.td {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  color: var(--text_d);
-  font-family: 'Noto Serif', serif;
+
+.list_card {
+  padding: 0.4em 2px;
+  
+  width:100%;
+ height:fit-content;
+  display: flex;
+  flex-direction: column;
+ justify-content: space-between;
+  margin: 0;
+
+  cursor:pointer;
+  
+}
+
+
+
+.list_card a{
+
  
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1rem;
+    border-radius: .375rem;
+    text-decoration: none;
 
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    width: 100%;
+    overflow: hidden;
+   line-height: 120%;
+  }
+  
+  .list_card a:hover {
+color:var(--primary_d);
+  }
 }
-th {
 
-}
-**/
