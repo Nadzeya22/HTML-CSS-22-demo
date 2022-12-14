@@ -34,9 +34,9 @@ option {
 
 
 .nav_cta {
-  border-color: none;
+  border-color: var(--primary_ll);
   color: var(--text_d);
-  background-color: var(--primary_ll);
+  background-color: var(--primary_l);
   width: 8em;
   height: 40px;
   font-size: 18px;
@@ -68,8 +68,8 @@ option {
 }
 
 .navbar .dropdown-item:hover {
-  background-color: var(--background_p);
-  color: var(--primary_d);
+  background-color: var(--primary_ll);
+  color: var(--text_d);
 }
 
 .navbar .dropdown-menu {
