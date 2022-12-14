@@ -258,7 +258,7 @@ i+span {
 
 
 .category {
-  color: var(--primary_d);
+  
   background-color: var(--background_l);
   width: fit-content;
   text-transform: uppercase;

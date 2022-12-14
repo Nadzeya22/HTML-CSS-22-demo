@@ -46,8 +46,9 @@ option {
 .nav_cta:hover {
   background-color: var(--background_l);
   border-color: var(--background_l);
+  color:var(--text_d) !important;
   font-weight: 500;
-  box-shadow: 1px 1px 0.8em #11111126
+  box-shadow: 1px 1px 0.8em #11111126;
 }
 
 .navbar input {
@@ -56,7 +57,7 @@ option {
 }
 
 .navbar a:hover {
-  color: var(--background_l) !important;
+  color: var(--primary_ll);
 }
 
 
@@ -68,6 +69,7 @@ option {
 
 .navbar .dropdown-item:hover {
   background-color: var(--background_p);
+  color: var(--primary_d);
 }
 
 .navbar .dropdown-menu {
