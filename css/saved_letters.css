@@ -75,8 +75,8 @@
 
 .sidenav a:hover {
   box-shadow: 2 px 4 px 10px 4px var(--text_d);
-  color: var(--primary_d);
-  /**background-color: var(--primary_ll);**/
+  
+  background-color: var(--primary_ll);
 }
 
 .breadcrumb {
@@ -618,7 +618,7 @@ font-size: 1.1rem;
 
 .active, .accordion:hover {
   background-color: var(--primary_ll); 
-  color: var(--primary_d);
+  
   }
 
 .panel {
