@@ -249,7 +249,7 @@ i+span {
 
 
 .category {
-  color: var(--primary_d);
+  
   background-color: var(--background_l);
   width: fit-content;
   text-transform: uppercase;
@@ -263,7 +263,7 @@ i+span {
 
 .category:hover {
   border: 1px solid var(--primary_l);
-  background-color: var(--primary_l);
+  background-color: var(--primary_ll);
 }
 .category_selected {
   border: var(--border_d);
