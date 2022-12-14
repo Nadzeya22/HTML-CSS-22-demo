@@ -146,21 +146,12 @@ textarea {
 .custom-card-title {
   font-family: 'Varela Round', sans-serif;
   /* position: absolute; */
-  top: 12%;
+  top: 16%;
   color: var(--primary_d) !important;
   width: 90%;
   font-weight: 400;
-  font-size: 20px;
-}
-
-.custom-card-title {
-  font-family: 'Varela Round', sans-serif;
-  /* position: absolute; */
-  top: 16%;
-  color: var(--primary_d);
-  width: 90%;
-  font-weight: 400;
   font-size: 18px;
+  text-decoration: none;
 }
 
 .custom-card p {
@@ -279,3 +270,19 @@ i+span {
   color: var(--primary_d) !important;
 }
 
+.see-all-div {
+  text-align: right;
+}
+
+.see-all {
+  font-family: 'Varela Round', sans-serif;
+  color: var(--text_d);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 20%;
+  background-color: var(--primary_ll);
+}
+
+.see-all:hover {
+  color: var(--background_l);
+}
