@@ -26,7 +26,7 @@ a,
 .form-select,
 option {
   font-family: 'Varela Round', sans-serif;
-  color: var(--text_d) !important;
+  color: var(--text_d) ;
 }
 
 
@@ -59,8 +59,11 @@ option {
   color: var(--background_l) !important;
 }
 
+
+
 .navbar .dropdown-item {
   color: var(--text_d);
+  text-transform: capitalize;
 }
 
 .navbar .dropdown-item:hover {
